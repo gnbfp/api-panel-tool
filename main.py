@@ -156,7 +156,7 @@ def menu_chat():
     if row is None:
         return
     url = _input("接口 URL (默认 DeepSeek): ", "https://api.deepseek.com/chat/completions")
-    model = _input("模型 (默认 deepseek-chat): ", "deepseek-chat")
+    model = _input("模型 (默认 deepseek-v4-flash): ", "deepseek-v4-flash")
     if not model:
         print("! 模型不能为空"); return
     prompt = _input("提示词(prompt): ")
