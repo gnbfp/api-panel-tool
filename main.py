@@ -155,8 +155,8 @@ def menu_chat():
     row = _pick_key()
     if row is None:
         return
-    url = _input("接口 URL (默认 OpenAI): ", "https://api.openai.com/v1/chat/completions")
-    model = _input("模型 (如 gpt-4o-mini): ")
+    url = _input("接口 URL (默认 DeepSeek): ", "https://api.deepseek.com/chat/completions")
+    model = _input("模型 (默认 deepseek-chat): ", "deepseek-chat")
     if not model:
         print("! 模型不能为空"); return
     prompt = _input("提示词(prompt): ")
